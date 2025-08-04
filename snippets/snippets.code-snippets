@@ -7,17 +7,57 @@
   "version": {
     "prefix": [".version"],
     "body": [".version ${1|DC_NTE,DC_11_2000,DC_V1,DC_V2,PC_V2,GC_NTE,GC_V3,GC_EP3_NTE,GC_EP3,XB_V3,BB_V4|}"],
-    "description": "Determines which set of opcodes to use during compilation."
+    "description": [".version determines which set of", "opcodes to use during compilation.\n"]
   },
   "quest-num": {
     "prefix": [".quest_num"],
     "body": [".quest_num "],
-    "description": ["Specifies the unique quest number.", "\nOn PSO episode I&II must be 0-255.", "\nOn other versions it can be 0-65535.\n"]
+    "description": [".quest_num pecifies the unique quest number.", "On PSO episode I&II it must be 0-255.", "On other versions it can be 0-65535.\n"]
   },
   "language": {
     "prefix": [".language"],
     "body": [".language ${1|0,1,2,3,4,5,6,7|}"],
-    "description": ["Specifies the", "\ninternal language of the quest.", "\nThe language values are:", "\n0 = Japanese", "\n1 = English", "\n2 = German", "\n3 = French", "\n4 = Spanish", "\n5 = Chinese (simplified)", "\n6 = Chinese (traditional)", "\n7 = Korean.\n"]
+    "description": [".language specifies the", "internal language of the quest.", "The language values are:", "0 = Japanese", "1 = English", "2 = German", "3 = French", "4 = Spanish", "5 = Chinese (simplified)", "6 = Chinese (traditional)", "7 = Korean.\n"]
+  },
+  "episode": {
+    "prefix": [".episode"],
+    "body": [".episode ${1|Episode1,Episode2,Episode3,Episode4|}"],
+    "description": [".episode specifies the quest's episode.", "The server ignores this if a", "set_episode or set_episode2 opcode is", "present in the start function.\n"]
+  },
+  "name": {
+    "prefix": [".name"],
+    "body": [".name \"$1\""],
+    "description": ".name specifies the quest's name.\n"
+  },
+  "short-desc": {
+    "prefix": [".short-desc"],
+    "body": [".short-desc \"$1\""],
+    "description": [".short-desc specifies the quest's", "short description.\n"]
+  },
+  "long-desc": {
+    "prefix": [".long-desc"],
+    "body": [".long-desc \"$1\""],
+    "description": [".long-desc specifies the quest's" ,"long description.\n"]
+  },
+  "max-players": {
+    "prefix": [".max_players"],
+    "body": [".max_players ${1|1,2,3,4|}"],
+    "description": ["On BB, .max_players specifies a", "maximum number of players.", "If not specified, the default is 4.\n"]
+  },
+  "joinable": {
+    "prefix": [".joinable"],
+    "body": [".joinable\n"],
+    "description": ["On BB, specifies if quests may be", "joinable while in progress.\n"]
+  },
+  "data": {
+    "prefix": [".data"],
+    "body": [".data ${1:<data>}"],
+    "description": [".data specifies that the following is", "data instead of nqasm script.", "Example usage:", " hello_symbol_chat:\n  .data 28000000 FFFF 0D00 05 18 1D 00 05 28 1D 01 36 20 2A 00 3C 00 32 00 FF 00 00 00 FF 00 00 00 FF 00 00 00 FF 00 00 02 FF 00 00 02 FF 00 00 02 FF 00 00 02 FF 00 00 02**\n"]
+  },
+  "zero": {
+    "prefix": [".zero"],
+    "body": [".zero "],
+    "description": [".zero provides a way to include a", "large number of zero bytes as data.", "Example usage:", " placeholder_label_name:\n  .zero 0x400 \n (0x400 = 1024 bytes of zeroes)\n"]
   },
   "nop": {
     "prefix": ["nop"],
