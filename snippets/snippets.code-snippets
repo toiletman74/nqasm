@@ -1,0 +1,27 @@
+{
+    "For Loop": {
+    "prefix": ["for", "for-const"],
+    "body": ["for (const ${2:element} of ${1:array}) {", "\t$0", "}"],
+    "description": "A for loop."
+  },
+  "version": {
+    "prefix": [".version"],
+    "body": [".version ${1|DC_NTE,DC_11_2000,DC_V1,DC_V2,PC_V2,GC_NTE,GC_V3,GC_EP3_NTE,GC_EP3,XB_V3,BB_V4|}"],
+    "description": "Determines which set of opcodes to use during compilation."
+  },
+  "quest-num": {
+    "prefix": [".quest_num"],
+    "body": [".quest_num "],
+    "description": ["Specifies the unique quest number.", "\nOn PSO episode I&II must be 0-255.", "\nOn other versions it can be 0-65535.\n"]
+  },
+  "language": {
+    "prefix": [".language"],
+    "body": [".language ${1|0,1,2,3,4,5,6,7|}"],
+    "description": ["Specifies the", "\ninternal language of the quest.", "\nThe language values are:", "\n0 = Japanese", "\n1 = English", "\n2 = German", "\n3 = French", "\n4 = Spanish", "\n5 = Chinese (simplified)", "\n6 = Chinese (traditional)", "\n7 = Korean.\n"]
+  },
+  "nop": {
+    "prefix": ["nop"],
+    "body": ["nop\n"],
+    "description": "Does nothing."
+  }
+}

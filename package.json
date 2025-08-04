@@ -10,23 +10,42 @@
     "Programming Languages"
   ],
   "contributes": {
-    "languages": [{
-      "id": "nqasm",
-      "aliases": ["nqasm", "nqasm"],
-      "extensions": [".nqasm"],
-      "configuration": "./language-configuration.json"
-    }],
-    "grammars": [{
-      "language": "nqasm",
-      "scopeName": "source.nqasm",
-      "path": "./syntaxes/nqasm.tmLanguage.json"
-    }],
+    "languages": [
+      {
+        "id": "nqasm",
+        "aliases": [
+          "nqasm",
+          "nqasm"
+        ],
+        "extensions": [
+          ".nqasm"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "nqasm",
+        "scopeName": "source.nqasm",
+        "path": "./syntaxes/nqasm.tmLanguage.json"
+      }
+    ],
+    "snippets": [
+      {
+        "language": "nqasm",
+        "path": "./snippets/snippets.code-snippets"
+      }
+    ],
     "themes": [
-    {
-      "label": "NQASM Theme",
-      "uiTheme": "vs-dark",
-      "path": "./themes/nqasm-theme.json"
-    }
-  ]
+      {
+        "label": "NQASM Theme",
+        "uiTheme": "vs-dark",
+        "path": "./themes/nqasm-theme.json"
+      }
+    ]
+  },
+  "dependencies": {
+    "code-generator": "^1.0.7",
+    "yo": "^5.1.0"
   }
 }

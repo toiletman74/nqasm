@@ -4,6 +4,13 @@
   "colors": {},
   "tokenColors": [
     {
+        "scope": "comment.line.double-slash.nqasm",
+        "settings": {
+        "foreground": "#327835",
+        "fontStyle": "bold"
+      }
+    },
+    {
       "scope": "entity.function.nqasm",
       "settings": {
         "foreground": "#00FFFF",
@@ -11,9 +18,17 @@
       }
     },
     {
-        "scope": "keyword.control.nqasm",
+        "scope": "entity.other.attribute-name.nqasm",
         "settings": {
-        "foreground": "#00FFFF",
+        "foreground": "#A34DAB",
+        "fontStyle": "bold"
+      }
+    }
+    ,
+    {
+        "scope": "keyword.nqasm",
+        "settings": {
+          "foreground": "#FEFFDE",
         "fontStyle": "bold"
       }
     }
