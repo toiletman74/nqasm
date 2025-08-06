@@ -63,5 +63,25 @@
     "prefix": ["nop"],
     "body": ["nop\n"],
     "description": "Does nothing."
+  },
+  "ret": {
+    "prefix": ["ret"],
+    "body": ["ret\n"],
+    "description": "Returns to last call."
+  },
+  "sync": {
+    "prefix": ["sync"],
+    "body": ["sync\n"],
+    "description": "Stops execution for the current game frame."
+  },
+  "exit": {
+    "prefix": ["exit"],
+    "body": ["exit\n"],
+    "description": "Exits the quest."
+  },
+  "thread": {
+    "prefix": ["thread"],
+    "body": ["thread $1"],
+    "description": ["Starts executing a function on a new thread.", "Thread <label>"]
   }
 }
