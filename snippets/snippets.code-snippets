@@ -72,7 +72,7 @@
   "sync": {
     "prefix": ["sync"],
     "body": ["sync\n"],
-    "description": "Stops execution for the current game frame."
+    "description": ["Stops execution for the current game", "frame.\n"]
   },
   "exit": {
     "prefix": ["exit"],
@@ -82,6 +82,21 @@
   "thread": {
     "prefix": ["thread"],
     "body": ["thread $1"],
-    "description": ["Starts executing a function on a new thread.", "Thread <label>"]
+    "description": ["Starts executing a function on a new", "thread.", "thread <label>\n"]
+  },
+  "va-start": {
+    "prefix": ["va_start"],
+    "body": ["va_start\n"],
+    "description": "Pushes r1-r7 to the stack."
+  },
+  "va-end": {
+    "prefix": ["va_end"],
+    "body": ["va_end\n"],
+    "description": "Pops r7-r1 from the stack."
+  },
+  "va-call": {
+    "prefix": ["va_call"],
+    "body": ["va_call $1"],
+    "description": ["Replaces r1-r7 with the args stack,", "then calls a function.", "va_call <label>\n"]
   }
 }
