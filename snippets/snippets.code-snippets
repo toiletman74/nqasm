@@ -98,5 +98,21 @@
     "prefix": ["va_call"],
     "body": ["va_call $1"],
     "description": ["Replaces r1-r7 with the args stack,", "then calls a function.", "va_call <label>\n"]
+  },
+  "let": {
+    "prefix": ["let"],
+    "body": ["let                             ${1:<regA>}, ${2:<regB>}$0"],
+    "description": "Copies a value from regB to regA.\n"
+  },
+  "leti": {
+    "prefix": ["leti"],
+    "body": ["leti                            ${1:<regA>}, ${2:<value>}$0"],
+    "description": "Sets regA to value.\n"
+  }
+  ,
+  "letb": {
+    "prefix": ["letb"],
+    "body": ["letb                            ${1:<regA>}, ${2:<value>}$0"],
+    "description": ["Sets regA to value.", "Only accepts a byte.\n"]
   }
 }
