@@ -325,5 +325,130 @@
     "prefix": ["modi"],
     "body": ["modi                            ${1:<reg>}, ${2:<value>}$0"],
     "description": []
+  },
+  "jmp": {
+    "prefix": ["jmp"],
+    "body": ["jmp                             ${1:<label>}$0"],
+    "description": []
+  },
+  "call": {
+    "prefix": ["call"],
+    "body": ["call                            ${1:<label>}$0"],
+    "description": []
+  },
+  "jmp-on": {
+    "prefix": ["jmp_on"],
+    "body": ["jmp_on                          ${1:<label>}, ${2:<reg_set>}$0"],
+    "description": []
+  },
+  "jmp-off": {
+    "prefix": ["jmp_off"],
+    "body": ["jmp_off                         ${1:<label>}, ${2:<reg_set>}$0"],
+    "description": []
+  },
+  "jmp-eq": {
+    "prefix": ["jmp_eq"],
+    "body": ["jmp_eq                          ${1:<regA>}, ${2:<regB>}, ${3:<label>}$0"],
+    "description": []
+  },
+  "jmpi-eq": {
+    "prefix": ["jmpi_eq"],
+    "body": ["jmpi_eq                         ${1:<reg>}, ${2:<value>}, ${3:<label>}$0"],
+    "description": []
+  },
+  "jmp-ne": {
+    "prefix": ["jmp_ne"],
+    "body": ["jmp_ne                          ${1:<regA>}, ${2:<regB>}, ${3:<label>}$0"],
+    "description": []
+  },
+  "jmpi-ne": {
+    "prefix": ["jmpi_ne"],
+    "body": ["jmpi_ne                         ${1:<reg>}, ${2:<value>}, ${3:<label>}$0"],
+    "description": []
+  },
+  "ujmp-gt": {
+    "prefix": ["ujmp_gt"],
+    "body": ["ujmp_gt                         ${1:<regA>}, ${2:<regB>}, ${3:<label>}$0"],
+    "description": []
+  },
+  "ujmpi-gt": {
+    "prefix": ["ujmpi_gt"],
+    "body": ["ujmpi_gt                        ${1:<reg>}, ${2:<value>}, ${3:<label>}$0"],
+    "description": []
+  },
+  "jmp-gt": {
+    "prefix": ["jmp_gt"],
+    "body": ["jmp_gt                          ${1:<regA>}, ${2:<regB>}, ${3:<label>}$0"],
+    "description": []
+  },
+  "ujmp-lt": {
+    "prefix": ["ujmp_lt"],
+    "body": ["ujmp_lt                         ${1:<regA>}, ${2:<regB>}, ${3:<label>}$0"],
+    "description": []
+  },
+  "ujmpi-lt": {
+    "prefix": ["ujmpi_lt"],
+    "body": ["ujmpi_lt                        ${1:<reg>}, ${2:<value>}, ${3:<label>}$0"],
+    "description": []
+  },
+  "jmp-lt": {
+    "prefix": ["jmp_lt"],
+    "body": ["jmp_lt                          ${1:<regA>}, ${2:<regB>}, ${3:<label>}$0"],
+    "description": []
+  },
+  "jmpi-lt": {
+    "prefix": ["jmpi_lt"],
+    "body": ["jmpi_lt                         ${1:<reg>}, ${2:<value>}, ${3:<label>}$0"],
+    "description": []
+  },
+  "ujmp-ge": {
+    "prefix": ["ujmp_ge"],
+    "body": ["ujmp_ge                         ${1:<regA>}, ${2:<regB>}, ${3:<label>}$0"],
+    "description": []
+  },
+  "ujmpi-ge": {
+    "prefix": ["ujmpi_ge"],
+    "body": ["ujmpi_ge                        ${1:<reg>}, ${2:<value>}, ${3:<label>}$0"],
+    "description": []
+  },
+  "jmp-ge": {
+    "prefix": ["jmp_ge"],
+    "body": ["jmp_ge                          ${1:<regA>}, ${2:<regB>}, ${3:<label>}$0"],
+    "description": []
+  },
+  "jmpi-ge": {
+    "prefix": ["jmpi_ge"],
+    "body": ["jmpi_ge                         ${1:<reg>}, ${2:<value>}, ${3:<label>}$0"],
+    "description": []
+  },
+  "ujmp-le": {
+    "prefix": ["ujmp_le"],
+    "body": ["ujmp_le                         ${1:<regA>}, ${2:<regB>}, ${3:<label>}$0"],
+    "description": []
+  },
+  "ujmpi-le": {
+    "prefix": ["ujmpi_le"],
+    "body": ["ujmpi_le                        ${1:<reg>}, ${2:<value>}, ${3:<label>}$0"],
+    "description": []
+  },
+  "jmp-le": {
+    "prefix": ["jmp_le"],
+    "body": ["jmp_le                          ${1:<regA>}, ${2:<regB>}, ${3:<label>}$0"],
+    "description": []
+  },
+  "jmpi-le": {
+    "prefix": ["jmpi_le"],
+    "body": ["jmpi_le                         ${1:<reg>}, ${2:<value>}, ${3:<label>}$0"],
+    "description": []
+  },
+  "switch-jmp": {
+    "prefix": ["switch_jmp"],
+    "body": ["switch_jmp                      ${1:<reg>}, ${2:<label_set>}$0"],
+    "description": []
+  },
+  "switch-call": {
+    "prefix": ["switch_call"],
+    "body": ["switch_call                     ${1:<reg>}, ${2:<label_set>}$0"],
+    "description": []
   }
 }
