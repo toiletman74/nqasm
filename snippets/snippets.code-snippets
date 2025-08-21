@@ -108,11 +108,40 @@
     "prefix": ["leti"],
     "body": ["leti                            ${1:<regA>}, ${2:<value>}$0"],
     "description": "Sets regA to value.\n"
-  }
-  ,
+  },
   "letb": {
     "prefix": ["letb"],
     "body": ["letb                            ${1:<regA>}, ${2:<value>}$0"],
     "description": ["Sets regA to value.", "Only accepts a byte.\n"]
+  },
+  "letw": {
+    "prefix": ["letw"],
+    "body": ["letw                            ${1:<regA>}, ${2:<value>}$0"],
+    "description": ["Sets regA to value.", "Only accepts two  bytes.\n"]
+  },
+  "leta": {
+    "prefix": ["leta"],
+    "body": ["leta                            ${1:<regA>}, ${2:<regB>}$0"],
+    "description": []
+  },
+  "leto": {
+    "prefix": ["leto"],
+    "body": ["leto                            ${1:<regA>}, ${2:<label>}$0"],
+    "description": []
+  },
+  "set": {
+    "prefix": ["set"],
+    "body": ["set                             ${1:<regA>}$0"],
+    "description": []
+  },
+  "clear": {
+    "prefix": ["clear"],
+    "body": ["clear                           ${1:<regA>}$0"],
+    "description": []
+  },
+  "rev": {
+    "prefix": ["rev"],
+    "body": ["rev                             ${1:<regA>}$0"],
+    "description": []
   }
 }
