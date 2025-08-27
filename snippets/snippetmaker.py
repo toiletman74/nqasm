@@ -2,7 +2,7 @@ import json
 import os
 import re
 
-SNIPPET_FILE = "C:\\Users\\Lenka\\nqasm\\snippets\\snippets.code-snippets"  # change this to your snippet file path
+SNIPPET_FILE = "snippets\\snippets.code-snippets"  # change this to your snippet file path
 
 def process_string(s: str):
     parts = s.rsplit(" ", 1)

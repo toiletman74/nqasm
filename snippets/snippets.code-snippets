@@ -700,5 +700,90 @@
     "prefix": ["p_talk_guild"],
     "body": ["p_talk_guild                    ${1:<client_id>}$0"],
     "description": []
+  },
+  "npc-talk-pl": {
+    "prefix": ["npc_talk_pl"],
+    "body": ["npc_talk_pl                     ${1:<REG_SET_FIXED, 8>}$0"],
+    "description": []
+  },
+  "npc-talk-kill": {
+    "prefix": ["npc_talk_kill"],
+    "body": ["npc_talk_kill                   ${1:<INT32>}$0"],
+    "description": []
+  },
+  "npc-crtpk": {
+    "prefix": ["npc_crtpk"],
+    "body": ["npc_crtpk                       ${1:<INT32>}, ${2:<INT32>}$0"],
+    "description": []
+  },
+  "npc-crppk": {
+    "prefix": ["npc_crppk"],
+    "body": ["npc_crppk                       ${1:<REG_SET_FIXED, 7>}$0"],
+    "description": []
+  },
+  "npc-crptalk": {
+    "prefix": ["npc_crptalk"],
+    "body": ["npc_crptalk                     ${1:<REG_SET_FIXED, 6>}$0"],
+    "description": []
+  },
+  "p-look-at": {
+    "prefix": ["p_look_at"],
+    "body": ["p_look_at                       ${1:<CLIENT_ID>}, ${2:<CLIENT_ID>}$0"],
+    "description": []
+  },
+  "npc-crp-id": {
+    "prefix": ["npc_crp_id"],
+    "body": ["npc_crp_id                      ${1:<REG_SET_FIXED, 7>}$0"],
+    "description": []
+  },
+  "cam-quake": {
+    "prefix": ["cam_quake"],
+    "body": ["cam_quake                       "],
+    "description": []
+  },
+  "cam-adj": {
+    "prefix": ["cam_adj"],
+    "body": ["cam_adj                         "],
+    "description": []
+  },
+  "cam-zmin": {
+    "prefix": ["cam_zmin"],
+    "body": ["cam_zmin                        "],
+    "description": []
+  },
+  "cam-zmout": {
+    "prefix": ["cam_zmout"],
+    "body": ["cam_zmout                       "],
+    "description": []
+  },
+  "cam-pan": {
+    "prefix": ["cam_pan"],
+    "body": ["cam_pan                         ${1:<REG_SET_FIXED, 5>}$0"],
+    "description": []
+  },
+  "game-lev-super": {
+    "prefix": ["game_lev_super"],
+    "body": ["game_lev_super                  "],
+    "description": []
+  },
+  "nop-85": {
+    "prefix": ["nop_85"],
+    "body": ["nop_85                          "],
+    "description": []
+  },
+  "game-lev-reset": {
+    "prefix": ["game_lev_reset"],
+    "body": ["game_lev_reset                  "],
+    "description": []
+  },
+  "nop-86": {
+    "prefix": ["nop_86"],
+    "body": ["nop_86                          "],
+    "description": []
+  },
+  "pos-pipe": {
+    "prefix": ["pos_pipe"],
+    "body": ["pos_pipe                        ${1:<REG_SET_FIXED, 4>}$0"],
+    "description": []
   }
 }
