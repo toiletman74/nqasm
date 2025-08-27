@@ -450,5 +450,255 @@
     "prefix": ["switch_call"],
     "body": ["switch_call                     ${1:<reg>}, ${2:<label_set>}$0"],
     "description": []
+  },
+  "nop-42": {
+    "prefix": ["nop_42"],
+    "body": ["nop_42                          ${1:<value>}$0"],
+    "description": []
+  },
+  "stack-push": {
+    "prefix": ["stack_push"],
+    "body": ["stack_push                      ${1:<reg>}$0"],
+    "description": []
+  },
+  "stack-pop": {
+    "prefix": ["stack_pop"],
+    "body": ["stack_pop                       ${1:<reg>}$0"],
+    "description": []
+  },
+  "stack-pushm": {
+    "prefix": ["stack_pushm"],
+    "body": ["stack_pushm                     ${1:<reg>}, ${2:<value>}$0"],
+    "description": []
+  },
+  "stack-popm": {
+    "prefix": ["stack_popm"],
+    "body": ["stack_popm                      ${1:<reg>}, ${2:<value>}$0"],
+    "description": []
+  },
+  "arg-pushr": {
+    "prefix": ["arg_pushr"],
+    "body": ["arg_pushr                       ${1:<reg>}$0"],
+    "description": []
+  },
+  "arg-pushl": {
+    "prefix": ["arg_pushl"],
+    "body": ["arg_pushl                       ${1:<value>}$0"],
+    "description": []
+  },
+  "arg-pushb": {
+    "prefix": ["arg_pushb"],
+    "body": ["arg_pushb                       ${1:<value>}$0"],
+    "description": []
+  },
+  "arg-pushw": {
+    "prefix": ["arg_pushw"],
+    "body": ["arg_pushw                       ${1:<value>}$0"],
+    "description": []
+  },
+  "arg-pusha": {
+    "prefix": ["arg_pusha"],
+    "body": ["arg_pusha                       ${1:<reg>}$0"],
+    "description": []
+  },
+  "arg-pusho": {
+    "prefix": ["arg_pusho"],
+    "body": ["arg_pusho                       ${1:<label>}$0"],
+    "description": []
+  },
+  "arg-pushs": {
+    "prefix": ["arg_pushs"],
+    "body": ["arg_pushs                       ${1:<cstring>}$0"],
+    "description": []
+  },
+  "message": {
+    "prefix": ["message"],
+    "body": ["message                         ${1:<value>}, ${2:<cstring>}$0"],
+    "description": []
+  },
+  "list": {
+    "prefix": ["list"],
+    "body": ["list                            ${1:<value>}, ${2:<cstring>}$0"],
+    "description": []
+  },
+  "fadein": {
+    "prefix": ["fadein"],
+    "body": ["fadein                          "],
+    "description": []
+  },
+  "fadeout": {
+    "prefix": ["fadeout"],
+    "body": ["fadeout                         "],
+    "description": []
+  },
+  "sound-effect": {
+    "prefix": ["sound_effect"],
+    "body": ["sound_effect                    ${1:<value>}$0"],
+    "description": []
+  },
+  "bgm": {
+    "prefix": ["bgm"],
+    "body": ["bgm                             ${1:<value>}$0"],
+    "description": []
+  },
+  "nop-56": {
+    "prefix": ["nop_56"],
+    "body": ["nop_56                          "],
+    "description": []
+  },
+  "nop-57": {
+    "prefix": ["nop_57"],
+    "body": ["nop_57                          "],
+    "description": []
+  },
+  "nop-58": {
+    "prefix": ["nop_58"],
+    "body": ["nop_58                          ${1:<value>}$0"],
+    "description": []
+  },
+  "nop-59": {
+    "prefix": ["nop_59"],
+    "body": ["nop_59                          ${1:<value>}$0"],
+    "description": []
+  },
+  "window-msg": {
+    "prefix": ["window_msg"],
+    "body": ["window_msg                      ${1:<cstring>}$0"],
+    "description": []
+  },
+  "add-msg": {
+    "prefix": ["add_msg"],
+    "body": ["add_msg                         ${1:<cstring>}$0"],
+    "description": []
+  },
+  "message-end": {
+    "prefix": ["message_end"],
+    "body": ["message_end                     "],
+    "description": []
+  },
+  "gettime": {
+    "prefix": ["gettime"],
+    "body": ["gettime                         ${1:<reg>}$0"],
+    "description": []
+  },
+  "window-msg-end": {
+    "prefix": ["window_msg_end"],
+    "body": ["window_msg_end                  "],
+    "description": []
+  },
+  "npc-crt": {
+    "prefix": ["npc_crt"],
+    "body": ["npc_crt                         ${1:<value>}, ${2:<value>}$0"],
+    "description": []
+  },
+  "npc-stop": {
+    "prefix": ["npc_stop"],
+    "body": ["npc_stop                        ${1:<value>}$0"],
+    "description": []
+  },
+  "npc-play": {
+    "prefix": ["npc_play"],
+    "body": ["npc_play                        ${1:<value>}$0"],
+    "description": []
+  },
+  "npc-kill": {
+    "prefix": ["npc_kill"],
+    "body": ["npc_kill                        ${1:<value>}$0"],
+    "description": []
+  },
+  "npc-talk-off": {
+    "prefix": ["npc_talk_off"],
+    "body": ["npc_talk_off                    "],
+    "description": []
+  },
+  "npc-talk-on": {
+    "prefix": ["npc_talk_on"],
+    "body": ["npc_talk_on                     "],
+    "description": []
+  },
+  "npc-crp": {
+    "prefix": ["npc_crp"],
+    "body": ["npc_crp                         ${1:<reg_set_fixed>}$0"],
+    "description": []
+  },
+  "create-pipe": {
+    "prefix": ["create_pipe"],
+    "body": ["create_pipe                     ${1:<value>}$0"],
+    "description": []
+  },
+  "p-hpstat": {
+    "prefix": ["p_hpstat"],
+    "body": ["p_hpstat                        ${1:<reg>}, ${2:<client_id>}$0"],
+    "description": []
+  },
+  "p-dead": {
+    "prefix": ["p_dead"],
+    "body": ["p_dead                          ${1:<reg>}, ${2:<client_id>}$0"],
+    "description": []
+  },
+  "p-disablewarp": {
+    "prefix": ["p_disablewarp"],
+    "body": ["p_disablewarp                   "],
+    "description": []
+  },
+  "p-enablewarp": {
+    "prefix": ["p_enablewarp"],
+    "body": ["p_enablewarp                    "],
+    "description": []
+  },
+  "p-move": {
+    "prefix": ["p_move"],
+    "body": ["p_move                          ${1:<reg_set_fixed>}$0"],
+    "description": []
+  },
+  "p-look": {
+    "prefix": ["p_look"],
+    "body": ["p_look                          ${1:<client_id>}$0"],
+    "description": []
+  },
+  "p-action-disable": {
+    "prefix": ["p_action_disable"],
+    "body": ["p_action_disable                "],
+    "description": []
+  },
+  "p-action-enable": {
+    "prefix": ["p_action_enable"],
+    "body": ["p_action_enable                 "],
+    "description": []
+  },
+  "disable-movement1": {
+    "prefix": ["disable_movement1"],
+    "body": ["disable_movement1               ${1:<client_id>}$0"],
+    "description": []
+  },
+  "enable-movement1": {
+    "prefix": ["enable_movement1"],
+    "body": ["enable_movement1                ${1:<client_id>}$0"],
+    "description": []
+  },
+  "clear-unused-flag": {
+    "prefix": ["clear_unused_flag"],
+    "body": ["clear_unused_flag_74            "],
+    "description": []
+  },
+  "set-unused-flag-75": {
+    "prefix": ["set_unused_flag_75"],
+    "body": ["set_unused_flag_75              "],
+    "description": []
+  },
+  "set-player-start-position": {
+    "prefix": ["set_player_start_position"],
+    "body": ["set_player_start_position       ${1:<reg_set_fixed, 4>}$0"],
+    "description": []
+  },
+  "p-return-guild": {
+    "prefix": ["p_return_guild"],
+    "body": ["p_return_guild                  "],
+    "description": []
+  },
+  "p-talk-guild": {
+    "prefix": ["p_talk_guild"],
+    "body": ["p_talk_guild                    ${1:<client_id>}$0"],
+    "description": []
   }
 }
