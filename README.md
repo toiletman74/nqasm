@@ -14,3 +14,18 @@ This is a visual studio code syntax highlighter and auto completer for the newse
   <img width="339" height="83" alt="image" src="https://github.com/user-attachments/assets/7ef9a374-3f0d-40d1-8328-044dde2962e6" />
 
 4. Click install from vsix and select the "nqasm-x.x.x.vsix" that you downloaded from releases.
+
+5. (Optional) Click the gear on the nqasm extension, then click "set theme" to use the theme I made for nqasm.
+   <img width="409" height="148" alt="image" src="https://github.com/user-attachments/assets/2c3eb17e-b32f-4b72-9261-f85de23fe934" />
+
+# How to use
+
+1. Open a command prompt and run the command <newserv.exe location> disassamble-quest-script <quest.bin location>. If your quest is in the form of a .qst, run the decode-qst command first.
+
+2. In visual studio code open the new quest.bin.txt that newserv created. (it'll be created in the same folder as your quest.bin)
+
+3. At the very bottom of visual studio code click where it says "{} Plain Text"
+   
+   <img width="173" height="36" alt="image" src="https://github.com/user-attachments/assets/b725366d-3331-4b75-a1d1-c7fbc656bfc5" />
+
+5. Select nqasm from the list of languages.
