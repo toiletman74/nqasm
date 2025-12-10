@@ -1,6 +1,6 @@
 # nqasm
 
-This is a syntax highlighter and auto completer for the newserv quest script assembler, for phantasy star online.
+This is a visual studio code syntax highlighter and auto completer for the newserv quest script assembler, for phantasy star online.
 
 # How to install
 
