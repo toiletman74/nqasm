@@ -1,8 +1,8 @@
 {
   "name": "nqasm",
   "displayName": "nqasm",
-  "description": "A syntax highlighter for the newserv quest assembler syntax for phantasy star online.",
-  "version": "0.0.1",
+  "description": "A syntax highlighter and autocompleter for the newserv quest assembler, for phantasy star online.",
+  "version": "0.0.5",
   "engines": {
     "vscode": "^1.102.0"
   },
@@ -47,5 +47,9 @@
   "dependencies": {
     "code-generator": "^1.0.7",
     "yo": "^5.1.0"
-  }
+  },
+  "repository": {
+  "type": "git",
+  "url": "https://github.com/toiletman74/nqasm#"
+}
 }
