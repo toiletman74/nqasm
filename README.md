@@ -20,7 +20,7 @@ This is a visual studio code syntax highlighter and auto completer for the newse
 
 # How to use
 
-1. Open a command prompt and run the command 
+1. Open a command prompt and run the command:
 
 *<newserv.exe location> disassamble-quest-script --bb <quest.bin location>* (replace the --bb with whatever version of pso you're making the quest for)
 
