@@ -1,0 +1,19 @@
+.version BB_V4
+.quest_num 0
+.language 1
+.episode Episode1
+.name "NQASM template"
+.short_desc "NQASM template description"
+.long_desc "NQASM template long description"
+
+start:
+  set_floor_handler               0, floor_handler_pioneer_2
+  leti                            r:op_arg1, 0 // EP1 Pioneer = 0, EP2 Pioneer = 18, EP4 Pioneer = 45
+  leti                            r:op_arg2, 0
+  leti                            r:op_arg3@62, 0
+  leti                            r:op_arg4, 0
+  map_designate                   (r:op_arg1, r:op_arg2, r:op_arg3, r:op_arg4)
+  ret
+
+floor_handler_pioneer_2:
+  ret
